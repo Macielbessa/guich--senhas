@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PAINEL DE CHAMADAS</title>
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<script src="lib/jquery-3.3.1.min.js"></script>
+	<script src="lib/script.js"></script>
+
+</head>
+
+<body>
+     <button onclick="openFullscreen();">Tela cheia</button>
+    <button onclick="closeFullscreen();">Fechar tela</button>
+
+	<div class="barraTop">&nbsp;</div>
+	<div class="container page">
+		
+		<div class="row barraSuperior">
+			<div class="col-xs-1">
+			
+			</div>
+			
+			<div class="col-xs-11" style="text-align: right;"><p></p>
+				<span class="textoClinica">PAINEL DE CHAMADAS</span><br>
+				<span class="subtitulo">SEJA BEM VINDO</span>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="senhaAtual">
+				<div class="row">
+					<div class="col-xs-5 col-xs-offset-1" style="text-align: right;"><br><br>
+						<span class="senhaTexto">SENHA &nbsp;</span>
+					</div>
+					
+					<div class="col-xs-5"  style="text-align: left;">
+						<span id="senhaAtualNumero">000</span>
+					</div>
+					<input type="hidden" id="senhaNormal" value="0000">
+					<input type="hidden" id="senhaPrioridade" value="000">
+					
+				</div>
+			</div>
+		</div>
+
+		</div>
+		<div class="row">
+			<div class="col-xs-4 col-xs-offset-4 ultimaSenha">
+				<br>
+				<span id="ultimaSenhaTexto">ÚLTIMA CHAMADA</span><br>
+				<span>Senha </span>
+				<span id="ultimaSenha">000</span>
+			</div>
+		</div>
+	</div>
+	
+	<audio id="audioChamada" src="audio/call.mp3"></audio>
+</body>
+</html>
